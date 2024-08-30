@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk URL Opener</title>
+</head>
+<body>
+    <h1>Bulk URL Opener</h1>
+    <form action="{{ url_for('open_urls') }}" method="post">
+        <label for="urls">Enter URLs (one per line):</label><br><br>
+        <textarea id="urls" name="urls" rows="10" cols="50"></textarea><br><br>
+        <button type="submit">Open URLs</button>
+    </form>
+</body>
+</html>
